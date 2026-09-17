@@ -84,5 +84,5 @@ body {
     transition: transform 0.3s ease;
 }
 .molduraJOGO:hover {
-    transform: scale(1.05); /* Aumenta a imagem em 5% ao passar o mouse */
+    transform: scale(1.05); 
 }
