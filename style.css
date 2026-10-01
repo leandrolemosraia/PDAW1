@@ -86,3 +86,33 @@ body {
 .molduraJOGO:hover {
     transform: scale(1.05); 
 }
+
+.card-content{
+    width: max-content;
+}
+
+
+.card-content:hover .preco {
+
+    display:inline-block;
+    transform: translateX(-163px) translateY(0px); 
+    /* TENHO QUE MODIFICAR O CARD-CONTENT PARA QUE O PREÇO APAREÇA(DIFICIL) */
+    transition: transform 1.0s ease-in-out;
+}
+.card-content:hover{
+    transform: scale(1.05);
+     transition: transform 0.3s ease;
+}
+
+
+.preco
+{
+    /* TENHO QUE MODIFICAR O CARD-CONTENT PARA QUE O PREÇO APAREÇA(DIFICIL) */
+    width: 163px;
+    height: 105px;
+    background-color: #daff0a;
+    display: none;
+    border-radius: 8px;
+    
+    
+}
