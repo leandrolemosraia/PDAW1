@@ -148,3 +148,31 @@ const jogos = {
     }
 };
 
+const imagem = document.getElementById("minhaImagem");
+const modal = document.getElementById("meuModal");
+const botaoFechar = document.getElementById("fecharModal");
+
+// Abrir modal ao clicar na imagem
+imagem.addEventListener("click", () => {
+  modal.showModal();
+});
+
+// Fechar modal ao clicar no botão 'X'
+botaoFechar.addEventListener("click", () => {
+  modal.close();
+});
+
+// Fechar modal ao clicar fora dele
+modal.addEventListener("click", (event) => {
+  const rect = modal.getBoundingClientRect();
+  const isInDialog = (
+    rect.top <= event.clientY &&
+    event.clientY <= rect.bottom &&
+    rect.left <= event.clientX &&
+    event.clientX <= rect.right
+  );
+  if (!isInDialog) {
+    modal.close();
+  }
+});
+

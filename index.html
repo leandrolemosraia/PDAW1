@@ -17,6 +17,9 @@
             <img id="modal-image" src="" alt="">
         </div>
 
+
+        <link rel="stylesheet" href="modal.css">
+
     <body>
 
     <div class="layout-container">
@@ -40,7 +43,7 @@
 </aside>    
 
         <main class="conteudo-principal">
-
+            <script src="script.js"></script>
             
         <div class="card-jogo" data-jogo="pokemon"> //
             <div class="card-content"> 
@@ -51,7 +54,7 @@
          <div class="preco"></div> </div>
         </div>
             
-            <div class="card-jogo" data-jogo="assasins">
+            <div class="card-jogo" id="open-assassins" data-jogo="assasins">
             <img class="molduraJOGO" src="imagensJOGOS/Assassins_Creed_shadows.jpg"
             alt="Imagem do jogo Assassin's Creed Shadows"
             height="210"
@@ -173,8 +176,18 @@
         </main>
 
     </div>
-        
-    
+<!-- https://share.google/aimode/ovLQpcpaE7vWS9y37 -->
+        <!-- Adicione o script para abrir e fechar o modal  TESTE NAO MODIFICAR(MEXER NO FUTURO DIV ACIMA NAO FAZ PARTE)-->
+    <!-- A imagem que serve de gatilho -->
+<img src="sua-imagem.jpg" alt="Minha imagem" id="minhaImagem" style="cursor: pointer; width: 200px;">
+
+<!-- O Modal -->
+<dialog id="meuModal">
+  <div class="modal-conteudo">
+    <button id="fecharModal">X</button>
+    <img src="sua-imagem.jpg" alt="Imagem ampliada" style="width: 100%;">
+  </div>
+</dialog>
     
 </body>
 </html>
