@@ -148,31 +148,31 @@ const jogos = {
     }
 };
 
-const imagem = document.getElementById("minhaImagem");
-const modal = document.getElementById("meuModal");
-const botaoFechar = document.getElementById("fecharModal");
+const botaoAbrir = document.getElementById('abrirModal');
+    const botaoFechar = document.getElementById('fecharModal');
+    const modal = document.getElementById('meuModal');
 
-// Abrir modal ao clicar na imagem
-imagem.addEventListener("click", () => {
-  modal.showModal();
-});
+    // Abre o modal ao clicar na imagem miniatura
+    botaoAbrir.addEventListener('click', () => {
+      modal.showModal(); // showModal() já gerencia o foco e o fundo escuro nativamente
+    </script>
 
-// Fechar modal ao clicar no botão 'X'
-botaoFechar.addEventListener("click", () => {
-  modal.close();
-});
+    // Fecha o modal ao clicar no botão "X"
+    botaoFechar.addEventListener('click', () => {
+      modal.close();
+    });
 
-// Fechar modal ao clicar fora dele
-modal.addEventListener("click", (event) => {
-  const rect = modal.getBoundingClientRect();
-  const isInDialog = (
-    rect.top <= event.clientY &&
-    event.clientY <= rect.bottom &&
-    rect.left <= event.clientX &&
-    event.clientX <= rect.right
-  );
-  if (!isInDialog) {
-    modal.close();
-  }
-});
+    // Fecha o modal se o usuário clicar na área escura (fora da imagem)
+    modal.addEventListener('click', (evento) => {
+      const r = modal.getBoundingClientRect();
+      const clicouFora = (
+        evento.clientX < r.left ||
+        evento.clientX > r.right ||
+        evento.clientY < r.top ||
+        evento.clientY > r.bottom
+      );
+      if (clicouFora) {
+        modal.close();
+      }
+    });
 
