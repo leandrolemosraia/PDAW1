@@ -148,31 +148,52 @@ const jogos = {
     }
 };
 
-const botaoAbrir = document.getElementById('abrirModal');
-    const botaoFechar = document.getElementById('fecharModal');
+  document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById('meuModal');
+    const botaoFechar = document.getElementById('fecharModal');
+    const modalImage = document.querySelector('.imagem-modal');
 
-    // Abre o modal ao clicar na imagem miniatura
-    botaoAbrir.addEventListener('click', () => {
-      modal.showModal(); // showModal() já gerencia o foco e o fundo escuro nativamente
-    </script>
+    // Seleciona todos os cards de jogos da página
+    const cards = document.querySelectorAll('.card-jogo');
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            if (modal && modalImage) {
+                /* =============================================================
+                   AQUI ESTÁ A MUDANÇA: 
+                   Em vez de pegar o 'src' do card clicado, definimos o caminho
+                   fixo da sua imagem de cor sólida (cinza.bmp) para TODOS!
+                   ============================================================= */
+                modalImage.src = "imagensJOGOS/cinza.bmp"; 
+                modalImage.alt = "Imagem de Cor Sólida";
+
+                // Abre o modal centralizado com a imagem fixa
+                modal.showModal(); 
+            }
+        });
+    });
 
     // Fecha o modal ao clicar no botão "X"
-    botaoFechar.addEventListener('click', () => {
-      modal.close();
-    });
+    if (botaoFechar) {
+        botaoFechar.addEventListener('click', () => {
+            modal.close();
+        });
+    }
 
-    // Fecha o modal se o usuário clicar na área escura (fora da imagem)
-    modal.addEventListener('click', (evento) => {
-      const r = modal.getBoundingClientRect();
-      const clicouFora = (
-        evento.clientX < r.left ||
-        evento.clientX > r.right ||
-        evento.clientY < r.top ||
-        evento.clientY > r.bottom
-      );
-      if (clicouFora) {
-        modal.close();
-      }
-    });
+    // Fecha o modal se o usuário clicar na área escura fora da foto
+    if (modal) {
+        modal.addEventListener('click', (evento) => {
+            const r = modal.getBoundingClientRect();
+            const clicouFora = (
+                evento.clientX < r.left ||
+                evento.clientX > r.right ||
+                evento.clientY < r.top ||
+                evento.clientY > r.bottom
+            );
+            if (clicouFora) {
+                modal.close();
+            }
+        });
+    }
+});
 
