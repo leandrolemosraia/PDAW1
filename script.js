@@ -1,21 +1,18 @@
 const jogos = {
-
     pokemon: { 
-    nome: "Pokemon FireRed",
-    nota: "9,3/10",
-    descricao: "Pokemon FireRed é um RPG no mapa de Kanto. O jogador pode explorar diferentes cidades, capturar Pokemon, enfrentar treinadores.",
-    resenha: "Um dos jogos mais clássicos da franquia Pokemon, com exploração, batalhas por turnos, evolução dos Pokemon e uma grande variedade de criaturas para capturar.",
-    imagem: "imagensJOGOS/PokemonFireRed.jpg"
-},
-
+        nome: "Pokemon FireRed",
+        nota: "9,3/10",
+        descricao: "Pokemon FireRed é um RPG no mapa de Kanto. O jogador pode explorar diferentes cidades, capturar Pokemon, enfrentar treinadores.",
+        resenha: "Um dos jogos mais clássicos da franquia Pokemon, com exploração, batalhas por turnos, evolução dos Pokemon e uma grande variedade de criaturas para capturar.",
+        imagem: "imagensJOGOS/PokemonFireRed.jpg"
+    },
     assasins:{
-        nome: "Assassin's Shadows",
+        nome: "Assassin's Creed Shadows",
         nota: "9,5/10",
         descricao: "Assassin's Creed Valhalla é um jogo de ação e aventura ambientado na era dos vikings. O jogador assume o papel de Eivor, um guerreiro viking.",
         resenha: "O jogo oferece uma experiência imersiva com combates intensos, exploração de um mundo aberto e uma narrativa envolvente que mistura história e ficção.",
         imagem: "imagensJOGOS/Assassins_Creed_Shadows.jpg"
     },
-
     eld: { 
         nome: "Elden Ring",
         nota: "9,8/10",
@@ -23,58 +20,48 @@ const jogos = {
         resenha: "O jogo é conhecido por sua dificuldade, combate estratégico e exploração profunda. Com uma narrativa envolvente e um mundo interconectado, Elden Ring oferece uma experiência única para os fãs de RPG.",
         imagem: "imagensJOGOS/Elden_Ring.jpg"
     },
-
     rdr: {
-        nome: "Read Dead redemption 2",
+        nome: "Read Dead Redemption 2",
         nota: "9,7/10",
-        descrição: "Read Dead redemption 2 é um jogo de mundo aberto ambientado no velho oeste. O seu personagem principal é Arthur morgan, fora da lei e membro de uma gangue.",
-        resenha: "O jogo tem uma boa narrativa com bom gráficos e mecânicas únicas com um mundo aberto muito rico em detalhes",
-        imagem: "imagens JOGOS/RDR2.jpg",
-
+        descrição: "Read Dead redemption 2 é um jogo de mundo aberto ambientado no velho oeste. O seu personagem principal é Arthur Morgan, fora da lei e membro de uma gangue.",
+        resenha: "O jogo tem uma boa narrativa com bom gráficos e mecânicas únicas com um mundo aberto muito rico em detalhes.",
+        imagem: "imagensJOGOS/RDR2.jpg"
     },
-
     mhunter: {
         nome: "Monster Hunter Wilds",
         nota: "9,7/10",
         descrição: "Monster Hunter Wilds é um jogo de ação e aventura onde os jogadores assumem o papel de caçadores de monstros em um mundo selvagem.",
         resenha: "O jogo oferece uma experiência de caça intensa com mecânicas de combate estratégico e uma variedade de monstros para enfrentar.",
-        imagem: "imagensJOGOS/Monster_Hunter_Wilds.png",
-
+        imagem: "imagensJOGOS/Monster_Hunter_Wilds.png"
     },
-
     cs: {
         nome: "Counter Strike",
         nota: "9,6/10",
         descrição: "Counter Strike é um jogo de tiro em primeira pessoa focado em combates entre equipes. Os jogadores assumem o papel de terroristas ou contra-terroristas.",
         resenha: "O jogo é conhecido por sua jogabilidade competitiva, mapas estratégicos e uma comunidade ativa de jogadores.",
-        imagem: "imagensJOGOS/CS2.jpg",
+        imagem: "imagensJOGOS/CS2.jpg"
     },
-
     pjctzomboid: {
         nome: "Project Zomboid",
         nota: "9,4/10",
         descrição: "Project Zomboid é um jogo de sobrevivência em mundo aberto onde os jogadores devem sobreviver a um apocalipse zumbi.",
         resenha: "O jogo oferece uma experiência desafiadora com mecânicas de sobrevivência, construção de abrigos e combate contra hordas de zumbis.",
-        imagem: "imagensJOGOS/Project_Zomboid.jpg",
+        imagem: "imagensJOGOS/Project_Zomboid.jpg"
     },
-
- Terraria: {
+    Terraria: {
         nome: "Terraria",
         nota: "9,5/10",
         descricao: "Terraria mistura exploração, construção, sobrevivência e combate em um mundo 2D gerado proceduralmente.",
         resenha: "A enorme quantidade de possibilidades torna Terraria um jogo bastante aberto e exploratório.",
         imagem: "imagensJOGOS/Terraria.png"
     },
-
     needfor: {
-
         nome: "Need for Speed Heat",
         nota: "8,5/10",
         descricao: "Need for Speed Heat é um jogo de corrida que mistura corridas oficiais durante o dia com disputas ilegais durante a noite.",
         resenha: "Um jogo focado em velocidade, personalização de carros e corridas em mundo aberto.",
         imagem: "imagensJOGOS/Need_for_Speed_Heat.png"
     },
-
     gtav: {
         nome: "Grand Theft Auto V",
         nota: "9,5/10",
@@ -82,7 +69,6 @@ const jogos = {
         resenha: "O mundo aberto, a variedade de atividades e a campanha são alguns dos principais elementos do jogo.",
         imagem: "imagensJOGOS/Grand_Theft_Auto_V.png"
     },
-
     forza: {
         nome: "Forza Horizon 6",
         nota: "9,0/10",
@@ -90,7 +76,6 @@ const jogos = {
         resenha: "Uma experiência voltada para quem gosta de dirigir, explorar e personalizar veículos.",
         imagem: "imagensJOGOS/Forza_Horizon_6.jpg"
     },
-
     dmc5: {
         nome: "Devil May Cry 5",
         nota: "9,2/10",
@@ -98,7 +83,6 @@ const jogos = {
         resenha: "O sistema de combate é o grande destaque, permitindo criar sequências de ataques bastante variadas.",
         imagem: "imagensJOGOS/Devil_May_Cry_5.jpg"
     },
-
     ark: {
         nome: "ARK: Survival Ascended",
         nota: "8,5/10",
@@ -106,7 +90,6 @@ const jogos = {
         resenha: "A possibilidade de explorar o mundo e interagir com diversas criaturas é um dos principais atrativos.",
         imagem: "imagensJOGOS/Ark_Survival_Ascended.jpg"
     },
-
     bf: {
         nome: "Battlefield 1",
         nota: "9,0/10",
@@ -114,7 +97,6 @@ const jogos = {
         resenha: "O jogo se destaca pelas grandes batalhas, veículos e mapas amplos.",
         imagem: "imagensJOGOS/Battlefield_1.png"
     },
-
     metro: {
         nome: "Metro Exodus",
         nota: "9,0/10",
@@ -122,7 +104,6 @@ const jogos = {
         resenha: "A combinação de exploração, combate e sobrevivência cria uma experiência bastante imersiva.",
         imagem: "imagensJOGOS/Metro_Exodus.png"
     },
-
     spiderman: {
         nome: "Spider-Man 2",
         nota: "9,2/10",
@@ -130,7 +111,6 @@ const jogos = {
         resenha: "O deslocamento pela cidade e os combates são alguns dos pontos centrais da experiência.",
         imagem: "imagensJOGOS/Spider-Man_2_2023.jpg"
     },
-
     nomansky: {
         nome: "No Man's Sky",
         nota: "9,0/10",
@@ -138,7 +118,6 @@ const jogos = {
         resenha: "Um jogo focado em exploração, sobrevivência, construção e descoberta.",
         imagem: "imagensJOGOS/No_man_sky.jpg"
     },
-
     factorio: {
         nome: "Factorio",
         nota: "9,5/10",
@@ -148,52 +127,62 @@ const jogos = {
     }
 };
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById('meuModal');
-    const botaoFechar = document.getElementById('fecharModal');
-    const modalImage = document.querySelector('.imagem-modal');
+const modal = document.getElementById("modal-jogo");
+const botaoFechar = document.getElementById("fecharModal");
 
-    // Seleciona todos os cards de jogos da página
-    const cards = document.querySelectorAll('.card-jogo');
+// Referências aos elementos internos de texto e imagem do modal
+const modalTitle = document.getElementById("modal-title");
+const modalRating = document.getElementById("modal-rating");
+const modalDescription = document.getElementById("modal-description");
+const modalReview = document.getElementById("modal-review");
+const modalImage = document.getElementById("modal-image"); 
 
-    cards.forEach(card => {
-        card.addEventListener('click', () => {
-            if (modal && modalImage) {
-                /* =============================================================
-                   AQUI ESTÁ A MUDANÇA: 
-                   Em vez de pegar o 'src' do card clicado, definimos o caminho
-                   fixo da sua imagem de cor sólida (cinza.bmp) para TODOS!
-                   ============================================================= */
-                modalImage.src = "imagensJOGOS/cinza.bmp"; 
-                modalImage.alt = "Imagem de Cor Sólida";
+// Capta todos os cartões que tenham a classe '.card-jogo'
+const cards = document.querySelectorAll(".card-jogo");
 
-                // Abre o modal centralizado com a imagem fixa
-                modal.showModal(); 
-            }
-        });
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        // Lê qual jogo foi clicado pelo "data-jogo"
+        const idJogo = card.getAttribute("data-jogo");
+        
+        // Pega as informações de dentro da lista "jogos" baseadas no idJogo
+        const infoJogo = jogos[idJogo];
+
+        if (infoJogo) {
+            // Insere os textos no modal
+            modalTitle.textContent = infoJogo.nome;
+            modalRating.textContent = infoJogo.nota;
+            
+            // O código abaixo ('descricao' || 'descrição') garante que a informação aparece
+            // mesmo que em alguns jogos tenhas usado a palavra com acento ou sem acento
+            modalDescription.textContent = infoJogo.descricao || infoJogo.descrição; 
+            modalReview.textContent = infoJogo.resenha;
+            
+            // Insere a imagem da capa do jogo no lado esquerdo do modal
+            modalImage.src = infoJogo.imagem;
+            modalImage.alt = "Capa de " + infoJogo.nome;
+
+            // Mostra o Modal
+            modal.showModal(); 
+        }
     });
+});
 
-    // Fecha o modal ao clicar no botão "X"
-    if (botaoFechar) {
-        botaoFechar.addEventListener('click', () => {
-            modal.close();
-        });
-    }
+// Fechar ao clicar no "X"
+botaoFechar.addEventListener("click", () => {
+    modal.close();
+});
 
-    // Fecha o modal se o usuário clicar na área escura fora da foto
-    if (modal) {
-        modal.addEventListener('click', (evento) => {
-            const r = modal.getBoundingClientRect();
-            const clicouFora = (
-                evento.clientX < r.left ||
-                evento.clientX > r.right ||
-                evento.clientY < r.top ||
-                evento.clientY > r.bottom
-            );
-            if (clicouFora) {
-                modal.close();
-            }
-        });
+// Fechar ao clicar fora (na parte esfumaçada escura)
+modal.addEventListener("click", (event) => {
+    const rect = modal.getBoundingClientRect();
+    const clicouFora = (
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom ||
+        event.clientX < rect.left ||
+        event.clientX > rect.right
+    );
+    if (clicouFora) {
+        modal.close();
     }
 });
-//

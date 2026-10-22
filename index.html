@@ -4,26 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUC-GAMES</title>
-    <!-- Chamadas dos estilos CSS no local correto (head) -->
+    <!-- As chamadas de CSS devem estar SEMPRE dentro do <head> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="modal.css">
 </head>
 <body>
-
-    <!-- O modal dinâmico dos cards de jogos (corrigido e fechado adequadamente) -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="close-button" id="close-button">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-rating"></p>
-            <p id="modal-description"></p>
-            <p id="modal-review"></p>
-            <img id="modal-image" src="" alt="">
-        </div>
-    </div>
-
     <div class="layout-container">
-        
         <aside class="sidebar">
             <div class="logo-container">
                  <img src="imagensJOGOS/PUCGAMES.png" alt="Logo PUC Games" class="logo-img">
@@ -34,101 +20,182 @@
                     <li><a href="#">RPG</a></li>
                     <li><a href="#">Ação</a></li>
                     <li><a href="#">Multiplayer</a></li>
+                    <li><a href="#">Aventura</a></li>
+                    <li><a href="#">Simulação</a></li>
+                    <li><a href="#">Clicker</a></li>
+                    <li><a href="#">Indie</a></li>
+                    <li><a href="#">Virais</a></li>
+                    <li><a href="#">Terror</a></li>
+                    <li><a href="#">Sobrevivência</a></li>
+                    <li><a href="#">Esportes</a></li>
+                    <li><a href="#">MEMES</a></li>
+                    <li><a href="#">Jogos de azar</a></li>
+                    <li><a href="#">Direção</a></li>
+                    <li><a href="#">Cartas</a></li>
+                    <li><a href="#">Estratégia</a></li>
+                    <li><a href="#">Quebra-cabeça</a></li>
+                    <li><a href="#">Tabuleiro</a></li>
+                    <li><a href="#">Tigrinho</a></li>
                 </ul>
             </nav>
         </aside>    
 
+        <!-- Todos os cartões de jogo agora usam a mesma estrutura com card-content para que a tua animação .preco funcione -->
         <main class="conteudo-principal">
             
             <div class="card-jogo" data-jogo="pokemon">
                 <div class="card-content"> 
-                    <img class="molduraJOGO" src="imagensJOGOS/PokemonFireRed.jpg" alt="Imagem do jogo Pokemon FireRed" height="210" width="165">
-                    <div class="preco"></div>
+                    <img class="molduraJOGO" src="imagensJOGOS/PokemonFireRed.jpg" alt="Pokemon FireRed" height="210" width="165">
+                    
                 </div>
             </div>
-                
-            <div class="card-jogo" id="open-assassins" data-jogo="assasins">
-                <img class="molduraJOGO" src="imagensJOGOS/Assassins_Creed_shadows.jpg" alt="Imagem do jogo Assassin's Creed Shadows" height="210" width="165">
+            
+            <div class="card-jogo" data-jogo="assasins">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Assassins_Creed_Shadows.jpg" alt="Assassin's Creed Shadows" height="210" width="165">
+                    
+                </div>
             </div>
 
             <div class="card-jogo" data-jogo="eld">
-                <img class="molduraJOGO" src="imagensJOGOS/Elden_Ring.jpg" alt="Imagem do jogo Elden Ring" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Elden_Ring.jpg" alt="Elden Ring" height="210" width="165">
+                   
+                </div>
             </div>
-
+            
             <div class="card-jogo" data-jogo="rdr">
-                <img class="molduraJOGO" src="imagensJOGOS/RDR2.jpg" alt="Imagem do jogo Red Dead Redemption 2" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/RDR2.jpg" alt="Red Dead Redemption 2" height="210" width="165">
+                   
+                </div>
             </div>
             
             <div class="card-jogo" data-jogo="mhunter">
-                <img class="molduraJOGO" src="imagensJOGOS/Monster_Hunter_Wilds.png" alt="Imagem do jogo Monster Hunter Wilds" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Monster_Hunter_Wilds.png" alt="Monster Hunter Wilds" height="210" width="165">
+                    
+                </div>
             </div>
             
             <div class="card-jogo" data-jogo="cs"> 
-                <img class="molduraJOGO" src="imagensJOGOS/CS2.jpg" alt="Imagem do jogo Counter-Strike2" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/CS2.jpg" alt="Counter-Strike 2" height="210" width="165">
+                   
+                </div>
             </div>
            
-            <div class="card-jogo" data-jogo="pjctomboid">
-                <img class="molduraJOGO" src="imagensJOGOS/Project_Zomboid.jpg" alt="Imagem do jogo Project Zomboid" height="210" width="165">
+            <div class="card-jogo" data-jogo="pjctzomboid"> <!-- Nome corrigido de pjctomboid para alinhar com o JavaScript -->
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Project_Zomboid.jpg" alt="Project Zomboid" height="210" width="165">
+                    
+                </div>
             </div>
            
             <div class="card-jogo" data-jogo="Terraria">
-                <img class="molduraJOGO" src="imagensJOGOS/Terraria.png" alt="Imagem do jogo Terraria" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Terraria.png" alt="Terraria" height="210" width="165">
+                    
+                </div>
             </div>
 
             <div class="card-jogo" data-jogo="needfor">
-                <img class="molduraJOGO" src="imagensJOGOS/Need_for_Speed_Heat.png" alt="Imagem do jogo Need for Speed Heat" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Need_for_Speed_Heat.png" alt="Need for Speed Heat" height="210" width="165">
+                    
+                </div>
             </div>
             
             <div class="card-jogo" data-jogo="gtav">
-                <img class="molduraJOGO" src="imagensJOGOS/Grand_Theft_Auto_V.png" alt="Imagem do jogo Grand Theft Auto V" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Grand_Theft_Auto_V.png" alt="Grand Theft Auto V" height="210" width="165">
+                    
+                </div>
             </div>
             
             <div class="card-jogo" data-jogo="forza">
-                <img class="molduraJOGO" src="imagensJOGOS/Forza_Horizon_6.jpg" alt="Imagem do jogo Forza Horizon 6" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Forza_Horizon_6.jpg" alt="Forza Horizon 6" height="210" width="165">
+                    
+                </div>
             </div>
             
             <div class="card-jogo" data-jogo="dmc5">
-                <img class="molduraJOGO" src="imagensJOGOS/Devil_May_Cry_5.jpg" alt="Imagem do jogo Devil May Cry 5" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Devil_May_Cry_5.jpg" alt="Devil May Cry 5" height="210" width="165">
+                    
+                </div>
             </div>
            
             <div class="card-jogo" data-jogo="ark">
-                <img class="molduraJOGO" src="imagensJOGOS/Ark_Survival_Ascended.jpg" alt="Imagem do jogo Ark: Survival Ascended" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Ark_Survival_Ascended.jpg" alt="Ark: Survival Ascended" height="210" width="165">
+                    
+                </div>
             </div>
 
             <div class="card-jogo" data-jogo="bf">
-                <img class="molduraJOGO" src="imagensJOGOS/Battlefield_1.png" alt="Imagem do jogo Battlefield 1" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Battlefield_1.png" alt="Battlefield 1" height="210" width="165">
+                   
+                </div>
             </div>
-
+            
             <div class="card-jogo" data-jogo="metro">
-                <img class="molduraJOGO" src="imagensJOGOS/Metro_Exodus.png" alt="Imagem do jogo Metro Exodus" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Metro_Exodus.png" alt="Metro Exodus" height="210" width="165">
+                   
+                </div>
             </div>
             
             <div class="card-jogo" data-jogo="spiderman">
-                <img class="molduraJOGO" src="imagensJOGOS/Spider-Man_2_2023.jpg" alt="Imagem do jogo Spider-Man 2" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Spider-Man_2_2023.jpg" alt="Spider-Man 2" height="210" width="165">
+                    
+                </div>
             </div>
 
             <div class="card-jogo" data-jogo="nomansky">
-                <img class="molduraJOGO" src="imagensJOGOS/No_man_sky.jpg" alt="Imagem do jogo No Man's Sky" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/No_man_sky.jpg" alt="No Man's Sky" height="210" width="165">
+                   
+                </div>
             </div>
 
-            <!-- Jogo do Factorio integrado como um card padrão do seu catálogo -->
             <div class="card-jogo" data-jogo="factorio">
-                <img class="molduraJOGO" src="imagensJOGOS/factorio.jpg" alt="Imagem do jogo Factorio" height="210" width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/factorio.jpg" alt="Factorio" height="210" width="165">
+                    
+                </div>
             </div>
-
+            
         </main>
     </div>
 
-    <!-- Estrutura nativa do seu Modal do Factorio -->
-    <dialog id="meuModal">
-      <div class="modal-container">
-        <button class="botao-fechar" id="fecharModal">&times;</button>
-        <img src="imagensJOGOS/cinza.bmp" alt="Imagem Ampliada" class="imagem-modal">
-      </div>
+    <!-- ===== ESTRUTURA DO MODAL DEFINITIVO COM FOTO E TEXTO LADO A LADO ===== -->
+    <dialog id="modal-jogo" class="janela-jogo">
+        <div class="conteudo-janela">
+            <!-- Botão em formato de bolinha vermelha para fechar -->
+            <button id="fecharModal" class="btn-fechar">X</button>
+            
+            <!-- Flexbox separa a imagem e o texto nestas duas divs -->
+            <div class="layout-modal">
+                <div class="modal-lado-imagem">
+                    <img id="modal-image" src="" alt="Capa do Jogo">
+                </div>
+
+                <div class="modal-lado-texto">
+                    <h2 id="modal-title">Título</h2>
+                    <p class="destaque"><strong>Nota:</strong> <span id="modal-rating"></span></p>
+                    <p id="modal-description"></p>
+                    <hr class="linha-divisoria">
+                    <p><em>Resenha:</em> <span id="modal-review"></span></p>
+                </div>
+            </div>
+        </div>
     </dialog>
 
-    <!-- O ARQUIVO JAVASCRIPT OBRIGATORIAMENTE AQUI NO FINAL https://share.google/aimode/D8Uy2iYW7PmZicgl1 -->
+    <!-- O Script deve ser sempre a última coisa antes de fechar o <body> -->
     <script src="script.js"></script>
-    
 </body>
 </html>
