@@ -127,62 +127,74 @@ const jogos = {
     }
 };
 
-const modal = document.getElementById("modal-jogo");
-const botaoFechar = document.getElementById("fecharModal");
+document.addEventListener("DOMContentLoaded", () => {
 
-// Referências aos elementos internos de texto e imagem do modal
-const modalTitle = document.getElementById("modal-title");
-const modalRating = document.getElementById("modal-rating");
-const modalDescription = document.getElementById("modal-description");
-const modalReview = document.getElementById("modal-review");
-const modalImage = document.getElementById("modal-image"); 
+    // CORRIGIDO: alterado de "modal-jogo" para "meuModal" para sincronizar com seu HTML
+    const modal = document.getElementById("meuModal");
+    const botaoFechar = document.getElementById("fecharModal");
 
-// Capta todos os cartões que tenham a classe '.card-jogo'
-const cards = document.querySelectorAll(".card-jogo");
+    // Referências aos elementos internos de texto e imagem do modal
+    const modalTitle = document.getElementById("modal-title");
+    const modalRating = document.getElementById("modal-rating");
+    const modalDescription = document.getElementById("modal-description");
+    const modalReview = document.getElementById("modal-review");
+    const modalImage = document.getElementById("modal-image"); 
 
-cards.forEach(card => {
-    card.addEventListener("click", () => {
-        // Lê qual jogo foi clicado pelo "data-jogo"
-        const idJogo = card.getAttribute("data-jogo");
-        
-        // Pega as informações de dentro da lista "jogos" baseadas no idJogo
-        const infoJogo = jogos[idJogo];
+    // Capta todos os cartões que tenham a classe '.card-jogo'
+    const cards = document.querySelectorAll(".card-jogo");
 
-        if (infoJogo) {
-            // Insere os textos no modal
-            modalTitle.textContent = infoJogo.nome;
-            modalRating.textContent = infoJogo.nota;
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            // Lê qual jogo foi clicado pelo "data-jogo"
+            const idJogo = card.getAttribute("data-jogo");
             
-            // O código abaixo ('descricao' || 'descrição') garante que a informação aparece
-            // mesmo que em alguns jogos tenhas usado a palavra com acento ou sem acento
-            modalDescription.textContent = infoJogo.descricao || infoJogo.descrição; 
-            modalReview.textContent = infoJogo.resenha;
-            
-            // Insere a imagem da capa do jogo no lado esquerdo do modal
-            modalImage.src = infoJogo.imagem;
-            modalImage.alt = "Capa de " + infoJogo.nome;
+            // Pega as informações de dentro da lista "jogos" baseadas no idJogo
+            const infoJogo = jogos[idJogo];
 
-            // Mostra o Modal
-            modal.showModal(); 
-        }
+            if (infoJogo && modal) {
+                // Insere os textos no modal
+                modalTitle.textContent = infoJogo.nome;
+                modalRating.textContent = infoJogo.nota;
+                
+                // O código abaixo ('descricao' || 'descrição') garante que a informação aparece
+                // mesmo que em alguns jogos tenhas usado a palavra com acento ou sem acento
+                modalDescription.textContent = infoJogo.descricao || infoJogo.descrição; 
+                modalReview.textContent = infoJogo.resenha;
+                
+                // Insere a imagem da capa do jogo
+                modalImage.src = infoJogo.imagem;
+                modalImage.alt = "Capa de " + infoJogo.nome;
+
+                // Mostra o Modal nativamente
+                modal.showModal(); 
+            }
+        });
     });
-});
 
-// Fechar ao clicar no "X"
-botaoFechar.addEventListener("click", () => {
-    modal.close();
-});
+    // Fecha o modal ao clicar no botão "X"
+    if (botaoFechar && modal) {
+        botaoFechar.addEventListener('click', () => {
+            modal.close();
+        });
+    }
 
-// Fechar ao clicar fora (na parte esfumaçada escura)
-modal.addEventListener("click", (event) => {
-    const rect = modal.getBoundingClientRect();
-    const clicouFora = (
-        event.clientY < rect.top ||
-        event.clientY > rect.bottom ||
-        event.clientX < rect.left ||
-        event.clientX > rect.right
-    );
-    if (clicouFora) {
-        modal.close();
+    // Fecha ao clicar fora do conteúdo (na área escura)
+    if (modal) {
+        modal.addEventListener('click', (evento) => {
+            const r = modal.getBoundingClientRect();
+            const clicouFora = (
+                evento.clientX < r.left ||
+                evento.clientX > r.right ||
+                evento.clientY < r.top ||
+                evento.clientY > r.bottom
+            );
+            if (clicouFora) {
+                modal.close();
+            }
+        });
     }
 });
+
+
+
+
