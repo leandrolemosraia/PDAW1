@@ -58,9 +58,11 @@ const jogos = {
     needfor: {
         nome: "Need for Speed Heat",
         nota: "8,5/10",
+        preco: "R$ 49,99",
         descricao: "Need for Speed Heat é um jogo de corrida que mistura corridas oficiais durante o dia com disputas ilegais durante a noite.",
         resenha: "Um jogo focado em velocidade, personalização de carros e corridas em mundo aberto.",
         imagem: "imagensJOGOS/Need_for_Speed_Heat.png"
+        
     },
     gtav: {
         nome: "Grand Theft Auto V",
@@ -103,6 +105,8 @@ const jogos = {
         descricao: "Metro Exodus é um jogo de tiro e sobrevivência ambientado em um mundo pós-apocalíptico.",
         resenha: "A combinação de exploração, combate e sobrevivência cria uma experiência bastante imersiva.",
         imagem: "imagensJOGOS/Metro_Exodus.png"
+        
+        
     },
     spiderman: {
         nome: "Spider-Man 2",
@@ -135,6 +139,7 @@ const modalTitle = document.getElementById("modal-title");
 const modalRating = document.getElementById("modal-rating");
 const modalDescription = document.getElementById("modal-description");
 const modalReview = document.getElementById("modal-review");
+const modalPreco = document.getElementById("modal-preco");
 const modalImage = document.getElementById("modal-image"); 
 
 // Capta todos os cartões que tenham a classe '.card-jogo'
@@ -152,6 +157,7 @@ cards.forEach(card => {
             // Insere os textos no modal
             modalTitle.textContent = infoJogo.nome;
             modalRating.textContent = infoJogo.nota;
+            modalPreco.textContent = infoJogo.preco || "Preço não disponível"; // Caso não tenha preço, mostra uma mensagem padrão
             
             // O código abaixo ('descricao' || 'descrição') garante que a informação aparece
             // mesmo que em alguns jogos tenhas usado a palavra com acento ou sem acento

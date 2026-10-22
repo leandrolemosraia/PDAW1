@@ -1,6 +1,6 @@
 /* ===== ESTILO PRINCIPAL DO MODAL ===== */
 .janela-jogo {
-    border: 2px solid #ddff1e;
+    border: 5px solid #ddff1e;
     border-radius: 20px;
     background-color: #222;
     color: white;
@@ -29,17 +29,17 @@
 /* Botão de Fechar Estilizado (Bolinha vermelha no topo) */
 .btn-fechar {
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: -30px;
+    right: -20px;
     cursor: pointer;
-    background: #ff3333;
-    color: white;
-    border: 2px solid #222;
+    background: #888686;
+    color: rgb(213, 255, 27);
+    border: 2px solid #daff06;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@
 }
 
 .btn-fechar:hover {
-    background: #ff0000;
+    background: #96c90b;
     transform: scale(1.1);
 }
 
@@ -87,9 +87,18 @@
 
 .destaque {
     font-size: 18px;
-    color: #cccccc;
-    background: #333;
+    color: #dbff0e;
+    background: #6e6d6d;
     padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    width: fit-content;
+}
+.destaque1 {
+    font-size: 18px;
+    color: #dbff0e;
+    background: #6e6d6d;
+    padding: 20px 10px;
     border-radius: 8px;
     display: inline-block;
     width: fit-content;
