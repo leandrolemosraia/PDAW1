@@ -5,14 +5,16 @@
     background-color: #222;
     color: white;
     padding: 30px;
-    
+
     /* Largura aumentada para acomodar a foto ao lado do texto confortavelmente */
-    width: 750px; 
+    width: 750px;
     max-width: 95%;
-    
-    margin: auto; /* A tag <dialog> aceita margin auto para centralizar no ecrã */
+
+    margin: auto;
+    /* A tag <dialog> aceita margin auto para centralizar no ecrã */
     box-shadow: 0 10px 40px black;
-    overflow: visible; /* Garante que o botão de fechar não é cortado */
+    overflow: visible;
+    /* Garante que o botão de fechar não é cortado */
 }
 
 /* Fundo escuro atrás do modal (overlay nativo) */
@@ -23,7 +25,7 @@
 
 /* Necessário para posicionar o botão X no canto do modal */
 .conteudo-janela {
-    position: relative; 
+    position: relative;
 }
 
 /* Botão de Fechar Estilizado (Bolinha vermelha no topo) */
@@ -54,14 +56,17 @@
 /* ===== LAYOUT LADO A LADO (FLEXBOX) ===== */
 .layout-modal {
     display: flex;
-    gap: 30px; /* Separa a imagem do texto */
-    align-items: center; /* Centraliza verticalmente a foto com o texto */
+    gap: 30px;
+    /* Separa a imagem do texto */
+    align-items: center;
+    /* Centraliza verticalmente a foto com o texto */
     margin-top: 10px;
 }
 
 /* Lado da Imagem */
 .modal-lado-imagem img {
-    width: 230px; /* Tamanho da miniatura da capa dentro do modal */
+    width: 230px;
+    /* Tamanho da miniatura da capa dentro do modal */
     border-radius: 12px;
     border: 2px solid #f1ff33;
     object-fit: cover;
@@ -70,10 +75,12 @@
 
 /* Lado do Texto */
 .modal-lado-texto {
-    flex: 1; /* Faz o texto preencher o restante do espaço à direita */
+    flex: 1;
+    /* Faz o texto preencher o restante do espaço à direita */
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Espaço entre as linhas de texto */
+    gap: 12px;
+    /* Espaço entre as linhas de texto */
     font-size: 15px;
     line-height: 1.4;
 }
@@ -94,6 +101,7 @@
     display: inline-block;
     width: fit-content;
 }
+
 .destaque1 {
     font-size: 18px;
     color: #dbff0e;

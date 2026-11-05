@@ -1,5 +1,5 @@
 const jogos = {
-    pokemon: { 
+    pokemon: {
         nome: "Pokemon FireRed",
         nota: "9,3/10",
         preco: "R$ 49,99",
@@ -7,7 +7,7 @@ const jogos = {
         resenha: "Um dos jogos mais clássicos da franquia Pokemon, com exploração, batalhas por turnos, evolução dos Pokemon e uma grande variedade de criaturas para capturar.",
         imagem: "imagensJOGOS/PokemonFireRed.jpg"
     },
-    assasins:{
+    assasins: {
         nome: "Assassin's Creed Shadows",
         nota: "9,5/10",
         preco: "R$ 49,99",
@@ -15,7 +15,7 @@ const jogos = {
         resenha: "O jogo oferece uma experiência imersiva com combates intensos, exploração de um mundo aberto e uma narrativa envolvente que mistura história e ficção.",
         imagem: "imagensJOGOS/Assassins_Creed_Shadows.jpg"
     },
-    eld: { 
+    eld: {
         nome: "Elden Ring",
         nota: "9,8/10",
         preco: "R$ 49,99",
@@ -70,7 +70,7 @@ const jogos = {
         descricao: "Need for Speed Heat é um jogo de corrida que mistura corridas oficiais durante o dia com disputas ilegais durante a noite.",
         resenha: "Um jogo focado em velocidade, personalização de carros e corridas em mundo aberto.",
         imagem: "imagensJOGOS/Need_for_Speed_Heat.png"
-        
+
     },
     gtav: {
         nome: "Grand Theft Auto V",
@@ -119,8 +119,8 @@ const jogos = {
         descricao: "Metro Exodus é um jogo de tiro e sobrevivência ambientado em um mundo pós-apocalíptico.",
         resenha: "A combinação de exploração, combate e sobrevivência cria uma experiência bastante imersiva.",
         imagem: "imagensJOGOS/Metro_Exodus.png"
-        
-        
+
+
     },
     spiderman: {
         nome: "Spider-Man 2",
@@ -157,7 +157,7 @@ const modalRating = document.getElementById("modal-rating");
 const modalDescription = document.getElementById("modal-description");
 const modalReview = document.getElementById("modal-review");
 const modalPreco = document.getElementById("modal-preco");
-const modalImage = document.getElementById("modal-image"); 
+const modalImage = document.getElementById("modal-image");
 
 // Capta todos os cartões que tenham a classe '.card-jogo'
 const cards = document.querySelectorAll(".card-jogo");
@@ -166,7 +166,7 @@ cards.forEach(card => {
     card.addEventListener("click", () => {
         // Lê qual jogo foi clicado pelo "data-jogo"
         const idJogo = card.getAttribute("data-jogo");
-        
+
         // Pega as informações de dentro da lista "jogos" baseadas no idJogo
         const infoJogo = jogos[idJogo];
 
@@ -175,18 +175,18 @@ cards.forEach(card => {
             modalTitle.textContent = infoJogo.nome;
             modalRating.textContent = infoJogo.nota;
             modalPreco.textContent = infoJogo.preco || "Preço não disponível"; // Caso não tenha preço, mostra uma mensagem padrão
-            
+
             // O código abaixo ('descricao' || 'descrição') garante que a informação aparece
             // mesmo que em alguns jogos tenhas usado a palavra com acento ou sem acento
-            modalDescription.textContent = infoJogo.descricao || infoJogo.descrição; 
+            modalDescription.textContent = infoJogo.descricao || infoJogo.descrição;
             modalReview.textContent = infoJogo.resenha;
-            
+
             // Insere a imagem da capa do jogo no lado esquerdo do modal
             modalImage.src = infoJogo.imagem;
             modalImage.alt = "Capa de " + infoJogo.nome;
 
             // Mostra o Modal
-            modal.showModal(); 
+            modal.showModal();
         }
     });
 });
