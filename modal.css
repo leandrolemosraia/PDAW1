@@ -110,3 +110,23 @@
     width: 100%;
     margin: 5px 0;
 }
+
+.btn-jogar {
+    font-size: 18px;
+    color: #dbff0e;
+    background: #6e6d6d;
+    border-radius: 10px;
+    display: inline-block;
+    /* width: calc(200px + 6px); Largura fixa de 200px mais o padding horizontal */
+    text-align: center;
+    top: -70px;
+    padding: 0px 3px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+.btn-jogar:hover {
+    background: #96c90b;
+    transform: scale(1.1);
+}
