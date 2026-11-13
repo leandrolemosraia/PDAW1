@@ -45,11 +45,24 @@
         <!-- Todos os cartões de jogo agora usam a mesma estrutura com card-content para que a tua animação .preco funcione -->
         <main class="conteudo-principal">
 
-            <div class="card-jogo" data-jogo="pokemon">
-                <div class="card-content">
+            <div class="card-jogo card-jogavel" data-jogo="pokemon">
+                <div class="card-content"> 
                     <img class="molduraJOGO" src="imagensJOGOS/PokemonFireRed.jpg" alt="Pokemon FireRed" height="210"
                         width="165">
+                </div>
+            </div>
 
+            <div class="card-jogo card-jogavel" data-jogo="mario">
+                <div class="card-content"> 
+                    <img class="molduraJOGO" src="imagensJOGOS/Mario.jfif" alt="mario" height="210"
+                        width="165">
+                </div>
+            </div>
+
+            <div class="card-jogo card-jogavel" data-jogo="pacman">
+                <div class="card-content"> 
+                    <img class="molduraJOGO" src="imagensJOGOS/Pacman.png" alt="Pacman" height="210"
+                        width="165">
                 </div>
             </div>
 
@@ -85,6 +98,13 @@
                 </div>
             </div>
 
+            <div class="card-jogo card-jogavel" data-jogo="pokemonEmerald">
+                <div class="card-content"> 
+                    <img class="molduraJOGO" src="imagensJOGOS/Pokemon_Emerald.jpg" alt="Pokemon Emerald" height="210"
+                        width="165">
+                </div>
+            </div>
+
             <div class="card-jogo" data-jogo="cs">
                 <div class="card-content">
                     <img class="molduraJOGO" src="imagensJOGOS/CS2.jpg" alt="Counter-Strike 2" height="210" width="165">
@@ -93,7 +113,6 @@
             </div>
 
             <div class="card-jogo" data-jogo="pjctzomboid">
-                <!-- Nome corrigido de pjctomboid para alinhar com o JavaScript -->
                 <div class="card-content">
                     <img class="molduraJOGO" src="imagensJOGOS/Project_Zomboid.jpg" alt="Project Zomboid" height="210"
                         width="165">
@@ -187,20 +206,30 @@
                 </div>
             </div>
 
+            <div class="card-jogo card-jogavel" data-jogo="minecraft">
+                <div class="card-content"> 
+                    <img class="molduraJOGO" src="imagensJOGOS/minecraft.jfif" alt="Minecraft" height="210"
+                        width="165">
+                </div>
+            </div>
+
+            <div class="card-jogo card-jogavel" data-jogo="tetris">
+                <div class="card-content"> 
+                    <img class="molduraJOGO" src="imagensJOGOS/Tetris.jfif" alt="Tetris" height="210"
+                        width="165">
+                </div>
+            </div>
         </main>
     </div>
 
-    <!-- ===== ESTRUTURA DO MODAL DEFINITIVO COM FOTO E TEXTO LADO A LADO ===== -->
     <dialog id="modal-jogo" class="janela-jogo" >
-        <button id="btn-jogar" class="btn-jogar">
-            <div class="btn-jogar"></div>
-    Jogar agora
-</button>
+        
         <div class="conteudo-janela">
-            <!-- Botão em formato de bolinha vermelha para fechar -->
+            <!-- Botão em formato de bolinha para fechar -->
             <button id="fecharModal" class="btn-fechar">X</button>
-
-            <!-- Flexbox separa a imagem e o texto nestas duas divs -->
+            
+            
+            
             <div class="layout-modal">
                 <div class="modal-lado-imagem">
                     <img id="modal-image" src="" alt="Capa do Jogo">
@@ -213,12 +242,14 @@
                     <p id="modal-description"></p>
                     <hr class="linha-divisoria">
                     <p><em>Resenha:</em> <span id="modal-review"></span></p>
+                    <button id="btn-jogar" class="btn-jogar" style="display: none;">
+                        Jogar agora
+                    </button>
                 </div>
             </div>
         </div>
     </dialog>
 
-    <!-- O Script deve ser sempre a última coisa antes de fechar o <body> -->
     <script src="script.js"></script>
     <script src="jogar.js"></script>
 </body>

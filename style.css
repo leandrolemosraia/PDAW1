@@ -71,7 +71,7 @@ body {
     padding: 60px;
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 25px; /* Espaçamento entre cards */
+  gap: 25px;
    align-content: start;
     
 }

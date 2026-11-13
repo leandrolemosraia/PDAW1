@@ -7,6 +7,22 @@ const jogos = {
         resenha: "Um dos jogos mais clássicos da franquia Pokemon, com exploração, batalhas por turnos, evolução dos Pokemon e uma grande variedade de criaturas para capturar.",
         imagem: "imagensJOGOS/PokemonFireRed.jpg"
     },
+    mario: {
+        nome: "Super Mario Bros",
+        nota: "9,5/10",
+        preco: "R$ 49,99",
+        descricao: "Super Mario Bros é um jogo de plataforma clássico onde o jogador controla Mario para salvar a Princesa Peach.",
+        resenha: "Um dos jogos mais icônicos da história dos videojogos, com desafios divertidos e uma jogabilidade que se tornou uma referência para muitos jogos subsequentes.",
+        imagem: "imagensJOGOS/Mario.jfif"
+    },
+    pacman: {
+        nome: "Pacman",
+        nota: "9,0/10",
+        preco: "R$ 49,99",
+        descricao: "Pacman é um jogo de arcade clássico onde o jogador controla um personagem que deve comer pastilhas enquanto evita fantasmas.",
+        resenha: "Um dos jogos mais icônicos da história dos videojogos, com uma jogabilidade simples mas envolvente e uma identidade visual distintiva.",
+        imagem: "imagensJOGOS/Pacman.png"
+    },
     assasins: {
         nome: "Assassin's Creed Shadows",
         nota: "9,5/10",
@@ -39,6 +55,14 @@ const jogos = {
         resenha: "O jogo oferece uma experiência de caça intensa com mecânicas de combate estratégico e uma variedade de monstros para enfrentar.",
         imagem: "imagensJOGOS/Monster_Hunter_Wilds.png"
     },
+    pokemonEmerald: {
+        nome: "Pokemon Emerald",
+        nota: "9,5/10",
+        preco: "R$ 49,99",
+        descrição: "Pokemon Emerald é um jogo de RPG da série Pokemon que oferece uma experiência envolvente com novos personagens e uma narrativa aprimorada.",
+        resenha: "O jogo mantém o espírito da série original enquanto adiciona novos elementos e desafios para os fãs.",
+        imagem: "imagensJOGOS/Pokemon_Emerald.jpg"
+    },
     cs: {
         nome: "Counter Strike",
         nota: "9,6/10",
@@ -47,6 +71,7 @@ const jogos = {
         resenha: "O jogo é conhecido por sua jogabilidade competitiva, mapas estratégicos e uma comunidade ativa de jogadores.",
         imagem: "imagensJOGOS/CS2.jpg"
     },
+ 
     pjctzomboid: {
         nome: "Project Zomboid",
         nota: "9,4/10",
@@ -145,7 +170,24 @@ const jogos = {
         descricao: "Factorio é um jogo de estratégia e automação no qual o jogador constrói e administra uma fábrica cada vez mais complexa.",
         resenha: "A evolução gradual das fábricas e a necessidade de otimizar processos são o grande destaque.",
         imagem: "imagensJOGOS/factorio.jpg"
-    }
+    },
+    minecraft: {
+        nome: "Minecraft",
+        nota: "9,0/10",
+        preco: "R$ 49,99",
+        descricao: "Minecraft é um jogo de sobrevivência e construção no qual o jogador explora um mundo gerado proceduralmente.",
+        resenha: "A liberdade criativa e a possibilidade de construir qualquer coisa são os principais destaques.",
+        imagem: "imagensJOGOS/minecraft.jfif"
+    },
+
+    tetris: {
+        nome: "Tetris",
+        nota: "9,0/10",
+        preco: "R$ 49,99",
+        descricao: "Tetris é um jogo de quebra-cabeça no qual o jogador organiza peças em linhas para eliminá-las.",
+        resenha: "Um clássico que se mantém popular por sua simplicidade e desafio constante.",
+        imagem: "imagensJOGOS/Tetris.jfif"
+    },
 };
 
 const modal = document.getElementById("modal-jogo");
@@ -161,6 +203,7 @@ const modalImage = document.getElementById("modal-image");
 
 // Capta todos os cartões que tenham a classe '.card-jogo'
 const cards = document.querySelectorAll(".card-jogo");
+const cardsjogavel = document.querySelectorAll(".card-jogavel");
 
 cards.forEach(card => {
     card.addEventListener("click", () => {

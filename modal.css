@@ -6,29 +6,23 @@
     color: white;
     padding: 30px;
 
-    /* Largura aumentada para acomodar a foto ao lado do texto confortavelmente */
+
     width: 750px;
     max-width: 95%;
 
     margin: auto;
-    /* A tag <dialog> aceita margin auto para centralizar no ecrã */
     box-shadow: 0 10px 40px black;
     overflow: visible;
-    /* Garante que o botão de fechar não é cortado */
 }
-
-/* Fundo escuro atrás do modal (overlay nativo) */
 .janela-jogo::backdrop {
     background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(4px);
 }
 
-/* Necessário para posicionar o botão X no canto do modal */
 .conteudo-janela {
     position: relative;
 }
 
-/* Botão de Fechar Estilizado (Bolinha vermelha no topo) */
 .btn-fechar {
     position: absolute;
     top: -30px;
@@ -53,34 +47,26 @@
     transform: scale(1.1);
 }
 
-/* ===== LAYOUT LADO A LADO (FLEXBOX) ===== */
 .layout-modal {
     display: flex;
     gap: 30px;
-    /* Separa a imagem do texto */
     align-items: center;
-    /* Centraliza verticalmente a foto com o texto */
     margin-top: 10px;
 }
 
-/* Lado da Imagem */
 .modal-lado-imagem img {
     width: 230px;
-    /* Tamanho da miniatura da capa dentro do modal */
     border-radius: 12px;
     border: 2px solid #f1ff33;
     object-fit: cover;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Lado do Texto */
 .modal-lado-texto {
     flex: 1;
-    /* Faz o texto preencher o restante do espaço à direita */
     display: flex;
     flex-direction: column;
     gap: 12px;
-    /* Espaço entre as linhas de texto */
     font-size: 15px;
     line-height: 1.4;
 }
@@ -125,7 +111,6 @@
     background: #6e6d6d;
     border-radius: 10px;
     display: inline-block;
-    /* width: calc(200px + 6px); Largura fixa de 200px mais o padding horizontal */
     text-align: center;
     top: -70px;
     padding: 0px 3px;

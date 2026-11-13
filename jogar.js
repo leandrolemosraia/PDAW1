@@ -1,56 +1,47 @@
+
 document.addEventListener("DOMContentLoaded", function () {
+
+    const jogosDisponiveis = {
+        //ao adicionar o jogo, é necessário criar a pasta com o index.html dentro da pasta jogos
+        pokemon: "jogos/pokemon/index.html",
+        mario: "jogos/mario/index.html",
+        pacman: "jogos/pacman/index.html",
+        pokemonEmerald: "jogos/pokemonEmerald/index.html",
+        minecraft: "jogos/mine/index.html",
+        tetris: "jogos/tetris/index.html",
+    };
 
     const botaoJogar = document.getElementById("btn-jogar");
 
-    let jogoSelecionado = null;
+  
+    botaoJogar.addEventListener("click", function () {
 
-    // Cadastro dos jogos disponíveis
-    const jogos = {
+        const idJogo = botaoJogar.dataset.jogo;
 
-        pokemon: {
-            arquivo: "jogos/pokemon/index.html"
-        },
-
-        assasins: {
-            arquivo: "jogos/assassins/index.html"
-        },
-
-        eld: {
-            arquivo: "jogos/eldenring/index.html"
-        },
-
-        rdr: {
-            arquivo: "jogos/reddead/index.html"
-        },
-
-        Terraria: {
-            arquivo: "jogos/terraria/index.html"
+        if (jogosDisponiveis[idJogo]) {
+            window.location.href = jogosDisponiveis[idJogo];
         }
 
-    };
+    });
 
-    // Identifica o jogo selecionado
+    // Aguarda a abertura do modal para verificar o jogo
+    const modal = document.getElementById("modal-jogo");
+
     document.querySelectorAll(".card-jogo").forEach(card => {
 
         card.addEventListener("click", function () {
 
-            jogoSelecionado = this.dataset.jogo;
+            const idJogo = this.dataset.jogo;
+
+            if (jogosDisponiveis[idJogo]) {
+                botaoJogar.dataset.jogo = idJogo;
+                botaoJogar.style.display = "block";
+            } else {
+                botaoJogar.style.display = "none";
+                botaoJogar.dataset.jogo = "";
+            }
 
         });
-
-    });
-
-    // Abre o jogo em outro HTML
-    botaoJogar.addEventListener("click", function () {
-
-        if (!jogoSelecionado || !jogos[jogoSelecionado]) {
-
-            alert("Este jogo ainda não está disponível!");
-
-            return;
-        }
-
-        window.location.href = jogos[jogoSelecionado].arquivo;
 
     });
 
