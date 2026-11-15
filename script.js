@@ -2,15 +2,15 @@ const jogos = {
     pokemon: {
         nome: "Pokemon FireRed",
         nota: "9,3/10",
-        preco: "R$ 49,99",
+        preco: "R$ 109,90",
         descricao: "Pokemon FireRed é um RPG no mapa de Kanto. O jogador pode explorar diferentes cidades, capturar Pokemon, enfrentar treinadores.",
-        resenha: "Um dos jogos mais clássicos da franquia Pokemon, com exploração, batalhas por turnos, evolução dos Pokemon e uma grande variedade de criaturas para capturar.",
+        resenha: "Um dos jogos mais clássicos da franquia Pokemon, com exploração, batalhas por turnos, evolução dos Pokemon e uma grande variedade de criaturas.",
         imagem: "imagensJOGOS/PokemonFireRed.jpg"
     },
     mario: {
         nome: "Super Mario Bros",
         nota: "9,5/10",
-        preco: "R$ 49,99",
+        preco: "R$ 150,00",
         descricao: "Super Mario Bros é um jogo de plataforma clássico onde o jogador controla Mario para salvar a Princesa Peach.",
         resenha: "Um dos jogos mais icônicos da história dos videojogos, com desafios divertidos e uma jogabilidade que se tornou uma referência para muitos jogos subsequentes.",
         imagem: "imagensJOGOS/Mario.jfif"
@@ -18,31 +18,31 @@ const jogos = {
     pacman: {
         nome: "Pacman",
         nota: "9,0/10",
-        preco: "R$ 49,99",
-        descricao: "Pacman é um jogo de arcade clássico onde o jogador controla um personagem que deve comer pastilhas enquanto evita fantasmas.",
+        preco: "R$ 10,99",
+        descricao: "Pacman é um jogo de arcade clássico onde o jogador controla um personagem amarelo enquanto evita fantasmas.",
         resenha: "Um dos jogos mais icônicos da história dos videojogos, com uma jogabilidade simples mas envolvente e uma identidade visual distintiva.",
         imagem: "imagensJOGOS/Pacman.png"
     },
     assasins: {
         nome: "Assassin's Creed Shadows",
         nota: "9,5/10",
-        preco: "R$ 49,99",
-        descricao: "Assassin's Creed Valhalla é um jogo de ação e aventura ambientado na era dos vikings. O jogador assume o papel de Eivor, um guerreiro viking.",
+        preco: "R$ 349,99",
+        descricao: "Assassin's Creed Shadows é um jogo de ação e aventura ambientado na era dos samurais. O jogador assume o papel de um assassino habilidoso em um mundo aberto.",
         resenha: "O jogo oferece uma experiência imersiva com combates intensos, exploração de um mundo aberto e uma narrativa envolvente que mistura história e ficção.",
         imagem: "imagensJOGOS/Assassins_Creed_Shadows.jpg"
     },
     eld: {
         nome: "Elden Ring",
         nota: "9,8/10",
-        preco: "R$ 49,99",
+        preco: "R$ 249,99",
         descricao: "Elden Ring é um RPG de ação em mundo aberto desenvolvido pela FromSoftware. O jogador explora um vasto mundo cheio de desafios e inimigos poderosos.",
-        resenha: "O jogo é conhecido por sua dificuldade, combate estratégico e exploração profunda. Com uma narrativa envolvente e um mundo interconectado, Elden Ring oferece uma experiência única para os fãs de RPG.",
+        resenha: "O jogo é conhecido por sua dificuldade, combate estratégico e exploração profunda. Com uma narrativa envolvente e um mundo interconectado.",
         imagem: "imagensJOGOS/Elden_Ring.jpg"
     },
     rdr: {
         nome: "Read Dead Redemption 2",
         nota: "9,7/10",
-        preco: "R$ 49,99",
+        preco: "R$ 249,99",
         descrição: "Read Dead redemption 2 é um jogo de mundo aberto ambientado no velho oeste. O seu personagem principal é Arthur Morgan, fora da lei e membro de uma gangue.",
         resenha: "O jogo tem uma boa narrativa com bom gráficos e mecânicas únicas com um mundo aberto muito rico em detalhes.",
         imagem: "imagensJOGOS/RDR2.jpg"
@@ -50,7 +50,7 @@ const jogos = {
     mhunter: {
         nome: "Monster Hunter Wilds",
         nota: "9,7/10",
-        preco: "R$ 49,99",
+        preco: "R$ 169,99",
         descrição: "Monster Hunter Wilds é um jogo de ação e aventura onde os jogadores assumem o papel de caçadores de monstros em um mundo selvagem.",
         resenha: "O jogo oferece uma experiência de caça intensa com mecânicas de combate estratégico e uma variedade de monstros para enfrentar.",
         imagem: "imagensJOGOS/Monster_Hunter_Wilds.png"
@@ -58,7 +58,7 @@ const jogos = {
     pokemonEmerald: {
         nome: "Pokemon Emerald",
         nota: "9,5/10",
-        preco: "R$ 49,99",
+        preco: "R$ 249,99",
         descrição: "Pokemon Emerald é um jogo de RPG da série Pokemon que oferece uma experiência envolvente com novos personagens e uma narrativa aprimorada.",
         resenha: "O jogo mantém o espírito da série original enquanto adiciona novos elementos e desafios para os fãs.",
         imagem: "imagensJOGOS/Pokemon_Emerald.jpg"
@@ -66,7 +66,7 @@ const jogos = {
     cs: {
         nome: "Counter Strike",
         nota: "9,6/10",
-        preco: "R$ 49,99",
+        preco: "Grátis",
         descrição: "Counter Strike é um jogo de tiro em primeira pessoa focado em combates entre equipes. Os jogadores assumem o papel de terroristas ou contra-terroristas.",
         resenha: "O jogo é conhecido por sua jogabilidade competitiva, mapas estratégicos e uma comunidade ativa de jogadores.",
         imagem: "imagensJOGOS/CS2.jpg"
@@ -75,7 +75,7 @@ const jogos = {
     pjctzomboid: {
         nome: "Project Zomboid",
         nota: "9,4/10",
-        preco: "R$ 49,99",
+        preco: "R$ 80,00",
         descrição: "Project Zomboid é um jogo de sobrevivência em mundo aberto onde os jogadores devem sobreviver a um apocalipse zumbi.",
         resenha: "O jogo oferece uma experiência desafiadora com mecânicas de sobrevivência, construção de abrigos e combate contra hordas de zumbis.",
         imagem: "imagensJOGOS/Project_Zomboid.jpg"
@@ -91,7 +91,7 @@ const jogos = {
     needfor: {
         nome: "Need for Speed Heat",
         nota: "8,5/10",
-        preco: "R$ 49,99",
+        preco: "R$ 129,99",
         descricao: "Need for Speed Heat é um jogo de corrida que mistura corridas oficiais durante o dia com disputas ilegais durante a noite.",
         resenha: "Um jogo focado em velocidade, personalização de carros e corridas em mundo aberto.",
         imagem: "imagensJOGOS/Need_for_Speed_Heat.png"
@@ -100,15 +100,15 @@ const jogos = {
     gtav: {
         nome: "Grand Theft Auto V",
         nota: "9,5/10",
-        preco: "R$ 49,99",
-        descricao: "Grand Theft Auto V apresenta um enorme mundo aberto e acompanha três protagonistas com histórias conectadas.",
+        preco: "R$ 89,90",
+        descricao: "GTA V apresenta um enorme mundo aberto e acompanha três protagonistas com histórias conectadas.",
         resenha: "O mundo aberto, a variedade de atividades e a campanha são alguns dos principais elementos do jogo.",
         imagem: "imagensJOGOS/Grand_Theft_Auto_V.png"
     },
     forza: {
         nome: "Forza Horizon 6",
         nota: "9,0/10",
-        preco: "R$ 49,99",
+        preco: "R$ 149,99",
         descricao: "Forza Horizon 6 é um jogo de corrida em mundo aberto focado em carros, exploração e competição.",
         resenha: "Uma experiência voltada para quem gosta de dirigir, explorar e personalizar veículos.",
         imagem: "imagensJOGOS/Forza_Horizon_6.jpg"
@@ -124,7 +124,7 @@ const jogos = {
     ark: {
         nome: "ARK: Survival Ascended",
         nota: "8,5/10",
-        preco: "R$ 49,99",
+        preco: "R$ 150,00",
         descricao: "ARK: Survival Ascended coloca o jogador em um ambiente selvagem onde é necessário sobreviver, construir e domesticar criaturas.",
         resenha: "A possibilidade de explorar o mundo e interagir com diversas criaturas é um dos principais atrativos.",
         imagem: "imagensJOGOS/Ark_Survival_Ascended.jpg"
@@ -132,7 +132,7 @@ const jogos = {
     bf: {
         nome: "Battlefield 1",
         nota: "9,0/10",
-        preco: "R$ 49,99",
+        preco: "R$ 149,99",
         descricao: "Battlefield 1 é um jogo de tiro em primeira pessoa ambientado na Primeira Guerra Mundial.",
         resenha: "O jogo se destaca pelas grandes batalhas, veículos e mapas amplos.",
         imagem: "imagensJOGOS/Battlefield_1.png"
@@ -150,7 +150,7 @@ const jogos = {
     spiderman: {
         nome: "Spider-Man 2",
         nota: "9,2/10",
-        preco: "R$ 49,99",
+        preco: "R$ 249,99",
         descricao: "Spider-Man 2 coloca o jogador no controle de Peter Parker e Miles Morales em uma aventura pela cidade de Nova York.",
         resenha: "O deslocamento pela cidade e os combates são alguns dos pontos centrais da experiência.",
         imagem: "imagensJOGOS/Spider-Man_2_2023.jpg"
@@ -158,7 +158,7 @@ const jogos = {
     nomansky: {
         nome: "No Man's Sky",
         nota: "9,0/10",
-        preco: "R$ 49,99",
+        preco: "R$ 189,99",
         descricao: "No Man's Sky permite explorar um universo praticamente infinito com planetas, criaturas e recursos diferentes.",
         resenha: "Um jogo focado em exploração, sobrevivência, construção e descoberta.",
         imagem: "imagensJOGOS/No_man_sky.jpg"
@@ -174,7 +174,7 @@ const jogos = {
     minecraft: {
         nome: "Minecraft",
         nota: "9,0/10",
-        preco: "R$ 49,99",
+        preco: "R$ 119,99",
         descricao: "Minecraft é um jogo de sobrevivência e construção no qual o jogador explora um mundo gerado proceduralmente.",
         resenha: "A liberdade criativa e a possibilidade de construir qualquer coisa são os principais destaques.",
         imagem: "imagensJOGOS/minecraft.jfif"
@@ -193,7 +193,7 @@ const jogos = {
 const modal = document.getElementById("modal-jogo");
 const botaoFechar = document.getElementById("fecharModal");
 
-// Referências aos elementos internos de texto e imagem do modal
+
 const modalTitle = document.getElementById("modal-title");
 const modalRating = document.getElementById("modal-rating");
 const modalDescription = document.getElementById("modal-description");
@@ -201,45 +201,37 @@ const modalReview = document.getElementById("modal-review");
 const modalPreco = document.getElementById("modal-preco");
 const modalImage = document.getElementById("modal-image");
 
-// Capta todos os cartões que tenham a classe '.card-jogo'
 const cards = document.querySelectorAll(".card-jogo");
 const cardsjogavel = document.querySelectorAll(".card-jogavel");
 
 cards.forEach(card => {
     card.addEventListener("click", () => {
-        // Lê qual jogo foi clicado pelo "data-jogo"
         const idJogo = card.getAttribute("data-jogo");
 
-        // Pega as informações de dentro da lista "jogos" baseadas no idJogo
         const infoJogo = jogos[idJogo];
 
         if (infoJogo) {
-            // Insere os textos no modal
             modalTitle.textContent = infoJogo.nome;
             modalRating.textContent = infoJogo.nota;
             modalPreco.textContent = infoJogo.preco || "Preço não disponível"; // Caso não tenha preço, mostra uma mensagem padrão
 
-            // O código abaixo ('descricao' || 'descrição') garante que a informação aparece
-            // mesmo que em alguns jogos tenhas usado a palavra com acento ou sem acento
+           
             modalDescription.textContent = infoJogo.descricao || infoJogo.descrição;
             modalReview.textContent = infoJogo.resenha;
-
-            // Insere a imagem da capa do jogo no lado esquerdo do modal
             modalImage.src = infoJogo.imagem;
             modalImage.alt = "Capa de " + infoJogo.nome;
 
-            // Mostra o Modal
             modal.showModal();
         }
     });
 });
 
-// Fechar ao clicar no "X"
+
 botaoFechar.addEventListener("click", () => {
     modal.close();
 });
 
-// Fechar ao clicar fora (na parte esfumaçada escura)
+
 modal.addEventListener("click", (event) => {
     const rect = modal.getBoundingClientRect();
     const clicouFora = (
@@ -252,3 +244,145 @@ modal.addEventListener("click", (event) => {
         modal.close();
     }
 });
+
+//Conversão para dolar
+
+(() => {
+  let emDolar = false;
+  let cotacaoDolar = 5.67;
+
+  async function atualizarCotacaoDolar() {
+    try {
+      const resposta = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL');
+      if (!resposta.ok) return;
+      const dados = await resposta.json();
+      const valorApi = parseFloat(dados?.USDBRL?.bid);
+      if (!Number.isNaN(valorApi) && valorApi > 0) {
+        cotacaoDolar = valorApi;
+      }
+    } catch (_) {
+    }
+  }
+
+  function extrairValorEmReal(texto) {
+    const limpo = texto
+      .replace(/R\$/gi, '')
+      .replace(/\s+/g, '')
+      .replace(/\./g, '')
+      .replace(',', '.');
+    return parseFloat(limpo);
+  }
+
+  function formatarParaDolar(valorEmReal) {
+    const convertido = valorEmReal / cotacaoDolar;
+    return `US$:${convertido.toFixed(2).replace('.', ',')}`;
+  }
+
+  function obterElementoPreco(container) {
+    const seletorDireto = container.querySelector('.preco, .card-preco, [data-preco]');
+    if (seletorDireto) return seletorDireto;
+
+    const candidatos = container.querySelectorAll('span, p, strong, small, div');
+    for (const el of candidatos) {
+      if (el.children.length === 0) {
+        const texto = el.textContent.trim();
+        if (/^(R\$|US:)/i.test(texto)) {
+          return el;
+        }
+      }
+    }
+    return null;
+  }
+
+  function aplicarMoedaNoElemento(elementoPreco) {
+    if (!elementoPreco) return;
+
+    if (!elementoPreco.dataset.precoBrl) {
+      elementoPreco.dataset.precoBrl = elementoPreco.textContent.trim();
+    }
+
+    const textoOriginal = elementoPreco.dataset.precoBrl;
+
+    if (!emDolar) {
+      elementoPreco.textContent = textoOriginal;
+      return;
+    }
+
+    const valorNumerico = extrairValorEmReal(textoOriginal);
+    if (Number.isNaN(valorNumerico) || valorNumerico <= 0) {
+      elementoPreco.textContent = textoOriginal;
+      return;
+    }
+
+    elementoPreco.textContent = formatarParaDolar(valorNumerico);
+  }
+
+  function atualizarPrecosNaTela() {
+    const cards = document.querySelectorAll('.card-jogo');
+    cards.forEach((card) => {
+      const elementoPreco = obterElementoPreco(card);
+      aplicarMoedaNoElemento(elementoPreco);
+    });
+
+    const modal = document.getElementById('modal-jogo');
+    if (modal) {
+      const precoModal = obterElementoPreco(modal);
+      if (precoModal) {
+        if (!emDolar && precoModal.dataset.precoBrl) {
+          precoModal.textContent = precoModal.dataset.precoBrl;
+        } else if (emDolar) {
+          const textoAtual = precoModal.textContent.trim();
+          if (/^R\$/i.test(textoAtual)) {
+            precoModal.dataset.precoBrl = textoAtual;
+          }
+          aplicarMoedaNoElemento(precoModal);
+        }
+      }
+    }
+  }
+
+  function configurarObservadorModal() {
+    const modal = document.getElementById('modal-jogo');
+    if (!modal) return;
+
+    const observador = new MutationObserver(() => {
+      if (!emDolar) return;
+      const precoModal = obterElementoPreco(modal);
+      if (!precoModal) return;
+      const textoAtual = precoModal.textContent.trim();
+      if (/^R\$/i.test(textoAtual)) {
+        precoModal.dataset.precoBrl = textoAtual;
+        aplicarMoedaNoElemento(precoModal);
+      }
+    });
+
+    observador.observe(modal, {
+      attributes: true,
+      attributeFilter: ['open'],
+      childList: true,
+      subtree: true
+    });
+  }
+
+  function iniciarConversorMoeda() {
+    const botaoMoeda = document.getElementById('btn-converter-moeda');
+    if (!botaoMoeda) return;
+
+    atualizarCotacaoDolar();
+    configurarObservadorModal();
+
+    botaoMoeda.addEventListener('click', () => {
+      emDolar = !emDolar;
+      botaoMoeda.setAttribute('aria-pressed', String(emDolar));
+      botaoMoeda.classList.toggle('ativo-usd', emDolar);
+      botaoMoeda.textContent = emDolar ? 'US$ | R$' : 'R$ | US$';
+      atualizarPrecosNaTela();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', iniciarConversorMoeda);
+  } else {
+    iniciarConversorMoeda();
+  }
+})();
