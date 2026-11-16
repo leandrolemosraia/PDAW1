@@ -193,7 +193,6 @@ const jogos = {
 const modal = document.getElementById("modal-jogo");
 const botaoFechar = document.getElementById("fecharModal");
 
-
 const modalTitle = document.getElementById("modal-title");
 const modalRating = document.getElementById("modal-rating");
 const modalDescription = document.getElementById("modal-description");
@@ -222,6 +221,7 @@ cards.forEach(card => {
             modalImage.alt = "Capa de " + infoJogo.nome;
 
             modal.showModal();
+            favoritarJogo(idJogo);
         }
     });
 });
@@ -275,7 +275,7 @@ modal.addEventListener("click", (event) => {
 
   function formatarParaDolar(valorEmReal) {
     const convertido = valorEmReal / cotacaoDolar;
-    return `US$:${convertido.toFixed(2).replace('.', ',')}`;
+    return `US$ ${convertido.toFixed(2).replace('.', ',')}`;
   }
 
   function obterElementoPreco(container) {
@@ -386,3 +386,89 @@ modal.addEventListener("click", (event) => {
     iniciarConversorMoeda();
   }
 })();
+
+
+function favoritarJogo(idJogo) {
+    const favoritar = document.getElementById("favoritarModal");
+
+    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+    // Atualiza o coração ao abrir o modal
+    favoritar.textContent = favoritos.includes(idJogo) ? "♥" : "♡";
+
+    // Evita adicionar vários eventos ao mesmo botão
+    favoritar.onclick = () => {
+        let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+        if (favoritos.includes(idJogo)) {
+            favoritos = favoritos.filter(id => id !== idJogo);
+            favoritar.textContent = "♡";
+        } else {
+            favoritos.push(idJogo);
+            favoritar.textContent = "♥";
+        }
+
+        localStorage.setItem("favoritos", JSON.stringify(favoritos));
+    };
+}
+
+function favoritarJogo(idJogo) {
+    const favoritar = document.getElementById("favoritarModal");
+
+    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+    favoritar.textContent = favoritos.includes(idJogo) ? "♥" : "♡";
+
+    favoritar.onclick = () => {
+        let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+        if (favoritos.includes(idJogo)) {
+            favoritos = favoritos.filter(id => id !== idJogo);
+            favoritar.textContent = "♡";
+        } else {
+            favoritos.push(idJogo);
+            favoritar.textContent = "♥";
+        }
+
+        localStorage.setItem("favoritos", JSON.stringify(favoritos));
+    };
+}
+
+// Mostrar somente os favoritos
+function mostrarFavoritos() {
+    const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+    mostrandoFavoritos = !mostrandoFavoritos;
+
+
+    document.getElementById("ver-favoritos").classList.toggle("ativo", mostrandoFavoritos);
+    document.querySelectorAll(".card-jogo").forEach(card => {
+        const idJogo = card.dataset.jogo;
+
+        card.style.display = favoritos.includes(idJogo) ? "" : "none";
+    });
+
+    modal.close();
+}
+
+const botaoFavoritos = document.getElementById("ver-favoritos");
+
+let mostrandoFavoritos = false;
+
+botaoFavoritos.addEventListener("click", () => {
+
+    mostrandoFavoritos = !mostrandoFavoritos;
+
+    botaoFavoritos.classList.toggle("ativo", mostrandoFavoritos);
+
+    const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+    document.querySelectorAll(".card-jogo").forEach(card => {
+        const idJogo = card.dataset.jogo;
+
+        card.style.display = mostrandoFavoritos
+            ? (favoritos.includes(idJogo) ? "" : "none")
+            : "";
+    });
+
+    modal.close();
+});

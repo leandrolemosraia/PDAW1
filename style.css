@@ -1,3 +1,20 @@
+/*Novo design estilo crazygames*/
+
+ 
+/* =====================================
+   PUC-GAMES - NOVA EXPERIÊNCIA
+===================================== */
+
+:root {
+    --fundo: #101116;
+    --fundo-card: #1b1d26;
+    --fundo-hover: #272a36;
+    --destaque: #8b5cf6;
+    --texto: #ffffff;
+    --texto-secundario: #a5a7b4;
+    --borda: #292b36;
+}
+
 /* Estilo da logo */
 .logo-container img {
     max-width: 100%; 
@@ -30,7 +47,7 @@ body {
     padding: 30px;
     
    
-    border-right: 2px solid #fbff00; 
+    border-right: 2px solid #edfd04; 
    
     display: flex;
     flex-direction: column; 
@@ -63,7 +80,8 @@ body {
 }
 
 .menu a:hover {
-    color: #ff0000; 
+    color: #ff0000;
+    border-color:#8b5cf6;
 }
 
 .conteudo-principal {
@@ -76,10 +94,10 @@ body {
     
 }
 .molduraJOGO { 
-    border: 1px solid #d0e45d;
+    border: 1px solid #edfd04;
     border-radius: 12px;
     padding: 3px;
-    background-color: #f1ff33;
+    background-color: #edfd04;
     margin: 0 auto;
     transition: transform 0.3s ease;
 }
@@ -90,24 +108,6 @@ body {
 .card-content{
     width: max-content;
 }
-
-/*Novo design estilo crazygames*/
-
- 
-/* =====================================
-   PUC-GAMES - NOVA EXPERIÊNCIA
-===================================== */
-
-:root {
-    --fundo: #101116;
-    --fundo-card: #1b1d26;
-    --fundo-hover: #272a36;
-    --destaque: #8b5cf6;
-    --texto: #ffffff;
-    --texto-secundario: #a5a7b4;
-    --borda: #292b36;
-}
-
 /* Fundo geral */
 
 body {
@@ -161,6 +161,7 @@ body {
 .menu a.ativo {
     background: var(--fundo-hover);
     color: white;
+    border-color: var(--destaque);
 }
 
 /* Menu recolhido */
@@ -203,12 +204,14 @@ body {
     color: white;
     padding: 12px 16px;
     border-radius: 10px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
     cursor: pointer;
 }
 
 .btn-menu:hover,
 .btn-favoritos:hover {
-    background: var(--fundo-hover);
+    background: #819135;
+    border-color: var(--destaque);
 }
 
 .campo-busca {
@@ -331,7 +334,15 @@ body {
 .btn-favoritar.favoritado {
     color: #ff4f81;
 }
-
+/* Botão favoritos ativado */
+.btn-favoritos.ativo {
+    background-color: #edfd04;
+    border-color: #edfd04;
+    color: #101116;
+    border-color: var(--destaque);
+    box-shadow: 0 0 10px #edfd0466;
+    transition: 0.3s ease;
+}
 /* Jogos filtrados */
 
 .card-jogo.oculto {
@@ -411,7 +422,7 @@ white-space: nowrap;
 }
 
 .btn-moeda:hover {
-background-color: #2b3244;
+background-color: #819135;
 border-color: #5c6bc0;
 }
 
@@ -420,9 +431,9 @@ transform: scale(0.97);
 }
 
 .btn-moeda.ativo-usd {
-background-color: #1b5e20;
-border-color: #4caf50;
-color: #e8f5e9;
+background-color: #edfd04;
+border-color:#8b5cf6;
+color: #000000;
 }
 
 /* ===== PADRONIZAÇÃO DOS CARDS E BORDA AMARELA ===== */

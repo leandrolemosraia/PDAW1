@@ -27,8 +27,8 @@
     right: -20px;
     cursor: pointer;
     background: #888686;
-    color: rgb(213, 255, 27);
-    border: 2px solid #daff06;
+    color: #edfd04;
+    border: 2px solid #edfd04;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -41,7 +41,8 @@
 }
 
 .btn-fechar:hover {
-    background: #96c90b;
+    border: 2px solid #8b5cf6;
+    color: #414040;
     transform: scale(1.1);
 }
 
@@ -56,7 +57,7 @@
     width: 230px;
     height: 300px;
     border-radius: 12px;
-    border: 2px solid #f1ff33;
+    border: 2px solid #edfd04;
     object-fit: cover;
     object-position: center top;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
@@ -81,7 +82,7 @@
 .destaque,
 .destaque1 {
     font-size: 18px;
-    color: #dbff0e;
+    color: #edfd04;
     background: #6e6d6d;
     padding: 6px 12px;
     border-radius: 8px;
@@ -108,9 +109,9 @@
 .btn-jogar {
     font-size: 18px;
     font-weight: bold;
-    color: #dbff0e;
+    color: #edfd04;
     background: #6e6d6d;
-    border: 2px solid #daff06;
+    border: 2px solid #edfd04;
     border-radius: 10px;
     text-align: center;
     padding: 10px 18px;
@@ -120,8 +121,9 @@
 }
 
 .btn-jogar:hover {
-    background: #96c90b;
-    color: #111;
+    background: #edfd04;
+    color: #414040;
+    border: 2px solid #8b5cf6;
     transform: scale(1.04);
 }
 
@@ -140,4 +142,32 @@
     .destaque1 {
         margin: 0 auto;
     }
+}
+.btn-favoritar {
+    position: absolute;
+    top: -32px;
+    right: 15px;
+    cursor: pointer;
+    color: #edfd04;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    background: transparent;
+}
+
+.btn-favoritar:hover {
+    
+    transform: scale(1.1);
+}
+.btn-favoritar.ativo {
+    background-color: #e63946;
+    color: white;
+    border: 1px solid #e63946;
+    transition: 0.3s;
 }
