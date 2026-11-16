@@ -375,7 +375,7 @@ modal.addEventListener("click", (event) => {
       emDolar = !emDolar;
       botaoMoeda.setAttribute('aria-pressed', String(emDolar));
       botaoMoeda.classList.toggle('ativo-usd', emDolar);
-      botaoMoeda.textContent = emDolar ? 'US$ | R$' : 'R$ | US$';
+      botaoMoeda.textContent = emDolar ? 'US$' : 'R$';
       atualizarPrecosNaTela();
     });
   }
