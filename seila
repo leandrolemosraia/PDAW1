@@ -1,8 +1,4 @@
-Luis
-
-botão que reproduz o trailer linkado direto do youtube
-link no eneba, nuvem,etc
-conversor de dolar pra real e real pra dolar
-adcionar dinamicamente os jogos 
-mudar as resenhasX
-------------------------------------------------------------
+/*tem que mudar o meio de criação dos jovos para o js (automatização);
+filtrar pelo menu e pesquisar: criar  "categoria" dentro dos div de cada 
+fazer o pesquisar funcionar por nome completo ou parcial;
+CRUD;
