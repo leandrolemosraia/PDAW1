@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUC-GAMES</title>
-    <!-- As chamadas de CSS devem estar SEMPRE dentro do <head> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="modal.css">
 </head>
 
-<header class="topbar">
-    <button id="toggle-menu" class="btn-menu">
-        ☰
-    </button>
-
-    <div class="campo-busca">
-        <span>⌕</span>
-        <input
-            type="search"
-            id="pesquisa-jogos"
-            placeholder="Pesquisar jogos..."
-        >
-    </div>
-
-        <button id="ver-favoritos" class="btn-favoritos">
-        ♥ Favoritos
-    </button>
-
-    <button id="btn-converter-moeda" class="btn-moeda" type="button" aria-pressed="false" title="Converter valores entre Real e Dólar">
-        R$
-    </button>
-</header>
-        
-    </button>
-</header>
-
 <body>
+    <header class="topbar">
+        <button id="toggle-menu" class="btn-menu" type="button" title="Recolher ou expandir menu">
+            ☰
+        </button>
+
+        <div class="campo-busca">
+            <span>⌕</span>
+            <input
+                type="search"
+                id="pesquisa-jogos"
+                placeholder="Pesquisar jogos..."
+            >
+        </div>
+
+        <div class="acoes-topbar">
+            <button id="ver-favoritos" class="btn-favoritos" type="button">
+                ♥ Favoritos
+            </button>
+
+            <button id="btn-converter-moeda" class="btn-moeda" type="button" aria-pressed="false" title="Converter valores entre Real e Dólar">
+                R$
+            </button>
+        </div>
+    </header>
+
     <div class="layout-container">
         <aside class="sidebar">
             <div class="logo-container">
@@ -44,219 +42,185 @@
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">RPG</a></li>
-                    <li><a href="#">Ação</a></li>
-                    <li><a href="#">Multiplayer</a></li>
-                    <li><a href="#">Aventura</a></li>
-                    <li><a href="#">Simulação</a></li>
-                    <li><a href="#">Clicker</a></li>
-                    <li><a href="#">Indie</a></li>
-                    <li><a href="#">Virais</a></li>
-                    <li><a href="#">Terror</a></li>
-                    <li><a href="#">Sobrevivência</a></li>
-                    <li><a href="#">Esportes</a></li>
-                    <li><a href="#">MEMES</a></li>
-                    <li><a href="#">Jogos de azar</a></li>
-                    <li><a href="#">Direção</a></li>
-                    <li><a href="#">Cartas</a></li>
-                    <li><a href="#">Estratégia</a></li>
-                    <li><a href="#">Quebra-cabeça</a></li>
-                    <li><a href="#">Tabuleiro</a></li>
-                    <li><a href="#">Tigrinho</a></li>
+                    <li><a href="#" data-classe="todos" class="ativo">Início</a></li>
+                    <li><a href="#" data-classe="rpg">RPG</a></li>
+                    <li><a href="#" data-classe="acao">Ação</a></li>
+                    <li><a href="#" data-classe="multiplayer">Multiplayer</a></li>
+                    <li><a href="#" data-classe="aventura">Aventura</a></li>
+                    <li><a href="#" data-classe="simulacao">Simulação</a></li>
+                    <li><a href="#" data-classe="clicker">Clicker</a></li>
+                    <li><a href="#" data-classe="indie">Indie</a></li>
+                    <li><a href="#" data-classe="virais">Virais</a></li>
+                    <li><a href="#" data-classe="terror">Terror</a></li>
+                    <li><a href="#" data-classe="sobrevivencia">Sobrevivência</a></li>
+                    <li><a href="#" data-classe="esportes">Esportes</a></li>
+                    <li><a href="#" data-classe="memes">MEMES</a></li>
+                    <li><a href="#" data-classe="jogos de azar">Jogos de azar</a></li>
+                    <li><a href="#" data-classe="direcao">Direção</a></li>
+                    <li><a href="#" data-classe="cartas">Cartas</a></li>
+                    <li><a href="#" data-classe="estrategia">Estratégia</a></li>
+                    <li><a href="#" data-classe="quebra-cabeca">Quebra-cabeça</a></li>
+                    <li><a href="#" data-classe="tabuleiro">Tabuleiro</a></li>
+                    <li><a href="#" data-classe="tigrinho">Tigrinho</a></li>
                 </ul>
             </nav>
         </aside>
 
-        <!-- Todos os cartões de jogo agora usam a mesma estrutura com card-content para que a tua animação .preco funcione -->
         <main class="conteudo-principal">
+            <div class="titulo-secao">
+                <h1>Explore nossos jogos</h1>
+                <p>Encontre seu próximo jogo favorito.</p>
+            </div>
 
             <div class="card-jogo card-jogavel" data-jogo="pokemon">
-                <div class="card-content"> 
-                    <img class="molduraJOGO" src="imagensJOGOS/PokemonFireRed.jpg" alt="Pokemon FireRed" height="210"
-                        width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/PokemonFireRed.jpg" alt="Pokemon FireRed" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo card-jogavel" data-jogo="mario">
-                <div class="card-content"> 
-                    <img class="molduraJOGO" src="imagensJOGOS/Mario.jfif" alt="mario" height="210"
-                        width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Mario.jfif" alt="Super Mario Bros" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo card-jogavel" data-jogo="pacman">
-                <div class="card-content"> 
-                    <img class="molduraJOGO" src="imagensJOGOS/Pacman.png" alt="Pacman" height="210"
-                        width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Pacman.png" alt="Pacman" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="assasins">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Assassins_Creed_Shadows.jpg"
-                        alt="Assassin's Creed Shadows" height="210" width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Assassins_Creed_shadows.jpg" alt="Assassin's Creed Shadows" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="eld">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Elden_Ring.jpg" alt="Elden Ring" height="210"
-                        width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Elden_Ring.jpg" alt="Elden Ring" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="rdr">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/RDR2.jpg" alt="Red Dead Redemption 2" height="210"
-                        width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/RDR2.jpg" alt="Red Dead Redemption 2" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="mhunter">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Monster_Hunter_Wilds.png" alt="Monster Hunter Wilds"
-                        height="210" width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Monster_Hunter_Wilds.png" alt="Monster Hunter Wilds" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo card-jogavel" data-jogo="pokemonEmerald">
-                <div class="card-content"> 
-                    <img class="molduraJOGO" src="imagensJOGOS/Pokemon_Emerald.jpg" alt="Pokemon Emerald" height="210"
-                        width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Pokemon_Emerald.jpg" alt="Pokemon Emerald" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="cs">
                 <div class="card-content">
                     <img class="molduraJOGO" src="imagensJOGOS/CS2.jpg" alt="Counter-Strike 2" height="210" width="165">
-
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="pjctzomboid">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Project_Zomboid.jpg" alt="Project Zomboid" height="210"
-                        width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Project_Zomboid.jpg" alt="Project Zomboid" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="Terraria">
                 <div class="card-content">
                     <img class="molduraJOGO" src="imagensJOGOS/Terraria.png" alt="Terraria" height="210" width="165">
-
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="needfor">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Need_for_Speed_Heat.png" alt="Need for Speed Heat"
-                        height="210" width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Need_for_Speed_Heat.png" alt="Need for Speed Heat" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="gtav">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Grand_Theft_Auto_V.png" alt="Grand Theft Auto V"
-                        height="210" width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Grand_Theft_Auto_V.png" alt="Grand Theft Auto V" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="forza">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Forza_Horizon_6.jpg" alt="Forza Horizon 6" height="210"
-                        width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Forza_Horizon_6.jpg" alt="Forza Horizon 6" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="dmc5">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Devil_May_Cry_5.jpg" alt="Devil May Cry 5" height="210"
-                        width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Devil_May_Cry_5.jpg" alt="Devil May Cry 5" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="ark">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Ark_Survival_Ascended.jpg" alt="Ark: Survival Ascended"
-                        height="210" width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Ark_Survival_Ascended.jpg" alt="Ark: Survival Ascended" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="bf">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Battlefield_1.png" alt="Battlefield 1" height="210"
-                        width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Battlefield_1.png" alt="Battlefield 1" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="metro">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Metro_Exodus.png" alt="Metro Exodus" height="210"
-                        width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Metro_Exodus.png" alt="Metro Exodus" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="spiderman">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/Spider-Man_2_2023.jpg" alt="Spider-Man 2" height="210"
-                        width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/Spider-Man_2_2023.jpg" alt="Spider-Man 2" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="nomansky">
                 <div class="card-content">
-                    <img class="molduraJOGO" src="imagensJOGOS/No_man_sky.jpg" alt="No Man's Sky" height="210"
-                        width="165">
-
+                    <img class="molduraJOGO" src="imagensJOGOS/No_man_sky.jpg" alt="No Man's Sky" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo" data-jogo="factorio">
                 <div class="card-content">
                     <img class="molduraJOGO" src="imagensJOGOS/factorio.jpg" alt="Factorio" height="210" width="165">
-
                 </div>
             </div>
 
             <div class="card-jogo card-jogavel" data-jogo="minecraft">
-                <div class="card-content"> 
-                    <img class="molduraJOGO" src="imagensJOGOS/minecraft.jfif" alt="Minecraft" height="210"
-                        width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Minecraft.jfif" alt="Minecraft" height="210" width="165">
                 </div>
             </div>
 
             <div class="card-jogo card-jogavel" data-jogo="tetris">
-                <div class="card-content"> 
-                    <img class="molduraJOGO" src="imagensJOGOS/Tetris.jfif" alt="Tetris" height="210"
-                        width="165">
+                <div class="card-content">
+                    <img class="molduraJOGO" src="imagensJOGOS/Tetris.jfif" alt="Tetris" height="210" width="165">
                 </div>
             </div>
+
+            <p id="mensagem-vazia" class="mensagem-vazia" style="display: none;">
+                Nenhum jogo encontrado para este filtro.
+            </p>
         </main>
     </div>
 
-    <dialog id="modal-jogo" class="janela-jogo" >
-        
+    <dialog id="modal-jogo" class="janela-jogo">
         <div class="conteudo-janela">
-            <!-- Botão em formato de bolinha-->
-            <button id="fecharModal" class="btn-fechar">X</button>
-            <button id="favoritarModal" class="btn-favoritar">♡</button>
-            
-            
-            
+            <button id="fecharModal" class="btn-fechar" type="button">X</button>
+            <button id="favoritarModal" class="btn-favoritar" type="button">♡</button>
+
             <div class="layout-modal">
                 <div class="modal-lado-imagem">
                     <img id="modal-image" src="" alt="Capa do Jogo">
@@ -269,27 +233,13 @@
                     <p id="modal-description"></p>
                     <hr class="linha-divisoria">
                     <p><em>Resenha:</em> <span id="modal-review"></span></p>
-                    <button id="btn-jogar" class="btn-jogar" style="display: none;">
+                    <button id="btn-jogar" class="btn-jogar" type="button" style="display: none;">
                         Jogar agora
                     </button>
                 </div>
             </div>
         </div>
     </dialog>
-
-    <main class="conteudo-principal">
-
-    <section class="secao-jogos">
-        <div class="titulo-secao">
-            <h1>Explore nossos jogos</h1>
-            <p>Encontre seu próximo jogo favorito.</p>
-        </div>
-
-        <div class="grade-jogos">
-
-                  </div>
-</section>
-</main>
 
     <script src="script.js"></script>
     <script src="jogar.js"></script>
